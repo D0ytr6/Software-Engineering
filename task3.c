@@ -5,7 +5,7 @@ unsigned char bright_flag = 0;
 
 __irq void eint1(void) {
 	flag = 1;
-	EXTINT |= 0x02; // clear eint1 interupt, control flag register
+	EXTINT |= 0x04; // clear eint1 interupt, control flag register
 	VICVectAddr = 0; // End of interrupt execution
 }
 

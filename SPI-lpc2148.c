@@ -8,7 +8,7 @@ void delay_ms(uint16_t j) /* Function for delay in milliseconds  */
   uint16_t x,i;
 	for(i=0;i<j;i++)
 	{
-    for(x=0; x<4000; x++);    /* loop to generate 1 millisecond delay with Cclk = 60MHz */
+    for(x=0; x<40000; x++);    /* loop to generate 1 millisecond delay with Cclk = 60MHz */
 	}
 }
 void SPIPutDot (int x, int y, char bright) {
